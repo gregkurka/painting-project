@@ -5,6 +5,21 @@ body {
   font-family: sans-serif;
 }
 
+.painting-window {
+  background-color: gray;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.grid-background-star {
+  display: grid;
+  grid-template-rows: repeat(5, 50px);
+  grid-template-columns: repeat(13, 50px);
+  grid-gap: 30px;
+  font-size: 200%;
+}
+
 .purchase-form > * {
   margin: 5px;
 }
@@ -17,11 +32,158 @@ body {
   font-weight: bold;
 }
 
+.circle-1 {
+  position: absolute;
+  left: 35%;
+  top: 90%;
+  width: 25%;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.head-guy {
+  position: absolute;
+  left: 43%;
+  top: 70%;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.body-guy {
+  position: absolute;
+  left: 39%;
+  top: 39%;
+  width: 70px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  transform: rotate(-15deg);
+}
+
+.arm1-guy {
+  position: absolute;
+  left: 37%;
+  top: 63%;
+  width: 40px;
+  height: 130px;
+  background-color: black;
+  border-radius: 15px;
+  transform: rotate(-150deg);
+}
+
+.arm2-guy {
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  width: 40px;
+  height: 130px;
+  background-color: black;
+  border-radius: 15px;
+  transform: rotate(110deg);
+}
+.leg1-guy {
+  position: absolute;
+  left: 43%;
+  top: 20%;
+  width: 40px;
+  height: 170px;
+  background-color: black;
+  border-radius: 15px;
+  transform: rotate(-150deg);
+}
+
+.leg2-guy {
+  position: absolute;
+  left: 31%;
+  top: 27%;
+  width: 40px;
+  height: 170px;
+  background-color: black;
+  border-radius: 15px;
+  transform: rotate(110deg);
+}
+
+.swoosh-holder {
+  display: flex;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  justify-content: space-evenly;
+  width: 20%;
+  transform: rotate(-195deg);
+}
+
+.swoosh-holder > * {
+  width: 10px;
+  height: 100px;
+  background-color: black;
+  border: 2px solid;
+}
+
+.swish2 {
+  height: 140px;
+}
+
+.bg-box-good-form {
+  left: 70%;
+  top: 10%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: bisque;
+}
+
+.main-box-good-form {
+  left: 73%;
+  top: 13%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: black;
+  padding: 0px;
+  z-index: 2;
+}
+
+.main-box-good-form > p {
+  margin: 10px;
+  color: bisque;
+  font-size: 300%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.tablet-img {
+  display: none;
+  margin: 0 auto;
+}
+
+.mobile-img {
+  display: none;
+  margin: 0 auto;
+}
+
 /* TABLET styles */
 @media (max-width: 1024px) {
+  .painting-window {
+    display: none;
+  }
+  .tablet-img {
+    display: block;
+  }
 }
 
 /* MOBILE styles */
 
 @media (max-width: 480px) {
+  .painting-window {
+    display: none;
+  }
+  .tablet-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
 }
