@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  background-color: midnightblue;
+  color: bisque;
+  font-family: sans-serif;
+}
+
+.purchase-form > * {
+  margin: 5px;
+}
+
+.purchase-form > .submit-button {
+  background-color: bisque;
+  font-size: 14px;
+  padding: 5px;
+  color: midnightblue;
+  font-weight: bold;
+}
+
+/* TABLET styles */
+@media (max-width: 1024px) {
+}
+
+/* MOBILE styles */
+
+@media (max-width: 480px) {
+}
